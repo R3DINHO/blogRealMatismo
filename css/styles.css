@@ -7,6 +7,11 @@
     font-family: 'gotham';
 }
 
+a:link{
+    text-decoration: none;
+    
+}
+
 /* navbar */
 
 .navbar-container{
@@ -160,6 +165,7 @@ hr{
     margin-top: 15px;
     color: #272727;
     text-align: left;
+    font-size: 14px;
 }
 
 /* patrocínios */

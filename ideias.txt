@@ -17,3 +17,7 @@ outras paginas
     quando rm joga
     
 BEMVINDO NACAO RESENHUDA
+
+
+json pra novidades + scrollable
+!!!data e hora das publicações!!!
