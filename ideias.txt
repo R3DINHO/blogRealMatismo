@@ -1,0 +1,19 @@
+opção de modo escuro e modo claro com as cor preta e branca -> real matismo
+
+
+página inicial
+
+sobre o blog
+    h1 -> bem vindo a nação resenhuda
+    foto time
+    explicação do blog, o que é
+        o time do povo quer ligar o clube ao povo resenhudo
+
+
+
+
+
+outras paginas
+    quando rm joga
+    
+BEMVINDO NACAO RESENHUDA
