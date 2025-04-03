@@ -21,3 +21,19 @@ BEMVINDO NACAO RESENHUDA
 
 json pra novidades + scrollable
 !!!data e hora das publicações!!!
+pra pagina inicial -> desenvolvedores do site -> andres, riscael, peppers
+
+
+    let body = document.body
+    let corpoArtigoImg = document.querySelector(".corpo-artigo img")
+    let divPatrociniosImg = document.querySelector(".divPatrocinios img")
+    let novidadesImg = document.querySelector(".novidades-card img")
+
+    body.style.filter = "invert(1)";
+    body.style.backgroundColor = "#000";
+
+    corpoArtigoImg.style.filter = "invert(1)";
+    novidadesImg.style.filter = "invert(1)";
+    divPatrociniosImg.style.filter = "none";
+
+dadada 383838
