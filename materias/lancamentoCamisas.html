@@ -8,6 +8,52 @@
     <link rel="stylesheet" href="../css/font.css">
     <link rel="shortcut icon" href="../img/logoRealMatismo.png" type="image/x-icon">
     <title>Lançamento das camisas do Real</title>
+    <style>
+        .divCardsImg{
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+
+        .cardImg{
+            width: 45%;
+            height: 460px;
+            background-color: #dfdfdf;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .cardImg p{
+            text-align: left;
+            width: 90%;
+            margin-top: 5px;
+            font-size: 15px;
+            color: #272727;
+        }
+
+        .cardImg:hover{
+            transform: scale(105%);
+        }
+
+        .cardImg img{
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+        }
+
+        #cFrente{
+            object-position: 9%;
+        }
+
+        #cCosta{
+            object-position: 94%;
+        }
+
+
+</style>
 </head>
 
 <body>
@@ -37,15 +83,7 @@
                                 <p>Futsal e Resenha</p>
                             </div>
                         </a>
-                        
-                        <div class="modoEscuro-container mostrando" onclick="modoEscuro()">
-                            <svg id="darkMode" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  ><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
-                            <p>Modo Escuro</p>
-                        </div>
-                        <div class="modoClaro-container naoMostrando" onclick="modoClaro()">
-                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  ><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
-                            <p>Modo Claro</p>
-                        </div>
+
                     </div>
 
                 </div>
@@ -55,9 +93,11 @@
             <div class="corpo-artigo ">
                 <article>
                     <h2>
-                        Titulo da matéria
+                        Confira a camisa do mais resenhudo!
                     </h2>
-                    <img src="" id="fotoTime" alt="">
+                    <h3 id="subTitle">Lançamos a nova camisa do Real Matismo! O manto tá pronto e só esperando pra ser
+                        estreado... Vem ver de perto essa obra de arte! 🔥⚽</h3>
+                    <img src="../img/noticiasIMG/camisasNoticias.jpg" id="fotoTime" alt="">
                     <p class="conteudo-corpo">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quidem sint! Iste, animi
                         minima tempore, enim praesentium eligendi dolores commodi natus ratione ipsum cumque! Enim
@@ -81,6 +121,17 @@
                         minima tempore, enim praesentium eligendi dolores commodi natus ratione ipsum cumque! Enim
                         maxime nihil doloribus cumque eum!
                     </p>
+                    <div class="divCardsImg">
+                        <div class="cardImg">
+                            <img  id="cFrente" src="../img/materiasIMG/imgCamisa4K.jpg" alt="frente da camisa do real matismo">
+                            <p>Frente da Camisa</p>
+                        </div>
+                        <div class="cardImg">
+                            <img id="cCosta" src="../img/materiasIMG/imgCamisa4K.jpg" alt="parte de trás da camisa do real matismo">
+                            <p>Parte de trás da camisa</p>
+                        </div>
+                    </div>
+
                 </article>
                 <hr class="normal">
                 <aside class="aside-container">
@@ -91,7 +142,7 @@
 
                             <a class="linkNovidade" href="">
                                 <div class="novidades-card">
-                                
+
                                 </div>
                             </a>
                         </div>
