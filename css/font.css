@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "gotham";
+    src: url(../fonts/Gotham/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: "horizon";
+    src: url(../fonts/Horizon-updated/Horizon-updated/euqueroessa/horizon.otf) format('truetype');
+}
