@@ -87,12 +87,9 @@ a {
 .navbar-baixo{
     background-color: #fff;
     padding: 30px;
-<<<<<<< HEAD
     display: flex;
     align-items: center;
     justify-content: space-between;
-=======
->>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee
 }
 
 .infoReal{
@@ -132,52 +129,6 @@ a {
     letter-spacing: -0.5px;
 }
 
-<<<<<<< HEAD
-=======
-.mostrando{
-    display: flex;
-}
-
-.naoMostrando{
-    display: none;
-}
-
-.modoEscuro-container{
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    top: 50%;
-    right: 100px;
-    transform: translate(0, -50%);
-    width: 100px;
-    cursor: POINTER;
-}
-
-.modoClaro-container{
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    top: 50%;
-    right: 100px;
-    transform: translate(0, -50%);
-    width: 100px;
-    cursor: POINTER;
-
-}
-
-
-.modoEscuro-container svg, .modoClaro-container svg{
-    width: 60px;
-}
-
-.modoClaro-container svg{
-    color: #fff;
-}
-
-.modoEscuro-container p{
-    font-size: 14px;
-}
->>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee
 
 /* main */
 
@@ -254,7 +205,6 @@ hr{
     border: 1px solid #00000027;
 }
 
-<<<<<<< HEAD
 .instaReal{
     cursor: pointer;
     text-transform: uppercase;
@@ -281,8 +231,6 @@ hr{
     width: 35px;
 }
 
-=======
->>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee
 
 
 /* novidades container */
