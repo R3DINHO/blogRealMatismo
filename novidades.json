@@ -6,8 +6,12 @@
       "imagem": "img/fotoTime.jpg",
       "alt": "imagem do elenco do Real Matismo",
       "data": "09/04/2025 - 11:57",
+<<<<<<< HEAD
       "link": "index.html",
       "caption": "Imagem: Real Matismo."
+=======
+      "link": "index.html"
+>>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee
     },
     {
       "titulo": "Confira a camisa do mais resenhudo!",
@@ -15,9 +19,13 @@
       "imagem": "img/noticiasIMG/camisasNoticias.jpg",
       "alt": "imagem borrada camisas do real matismo",
       "data": "09/04/2025 - 12:57",
+<<<<<<< HEAD
       "link": "lancamentoCamisas.html",
       "caption": "Imagem criada por Real Matismo."
 
+=======
+      "link": "lancamentoCamisas.html"
+>>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee
     },
     {
       "titulo": "2º edição da Aurea Cup confirmada!",
@@ -25,6 +33,7 @@
       "imagem": "img/noticiasIMG/postAC.jpg",
       "alt": "imagem post aurea cup",
       "data": "09/04/2025 - 11:57",
+<<<<<<< HEAD
       "link": "aureaCupConfirmada.html",
       "caption": "Imagem criada por Real Matismo."
 
@@ -39,6 +48,35 @@
       "caption": "Imagem criada por Real Matismo."
 
     }
+=======
+      "link": "aureaCupConfirmada.html"
+    },
+    {
+      "titulo": "Confira a camisa do mais resenhudo!",
+      "descricao": "Lançamos a nova camisa do Real Matismo! O manto tá pronto e só esperando pra ser estreado... Vem ver de perto essa obra de arte!",
+      "imagem": "img/noticiasIMG/camisasNoticias.jpg",
+      "alt": "imagem borrada camisas do real matismo",
+      "data": "2025-04-02",
+      "link": "lancamentoCamisas.html"
+    },
+    {
+      "titulo": "2º edição da Aurea Cup confirmada!",
+      "descricao": "O real vai atrás do seu primeiro título! Veja as informações do maior campeonato de futsal das equipes do IF São Miguel Paulista.",
+      "imagem": "",
+      "alt": "imagem real matismo aurea cup",
+      "data": "2025-04-02",
+      "link": "aureaCupConfirmada.html"
+    },
+    {
+      "titulo": "2º edição da Aurea Cup confirmada!",
+      "descricao": "O real vai atrás do seu primeiro título! Veja as informações do maior campeonato de futsal das equipes do IF São Miguel Paulista.",
+      "imagem": "",
+      "alt": "imagem real matismo aurea cup",
+      "data": "2025-04-02",
+      "link": "aureaCupConfirmada.html"
+    }
+
+>>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee
     
     
   ]
