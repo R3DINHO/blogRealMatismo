@@ -30,14 +30,13 @@ fetch('/novidades.json')
       if(dataEl) {
         dataEl.textContent = `${noticia.data}`
       }
-<<<<<<< HEAD
+
 
       const captionEL = document.querySelector(".mainCaption")
       if(captionEL){
         captionEL.textContent = `${noticia.caption}`
       }
-=======
->>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee
+
     } else {
       console.warn("Notícia não encontrada no JSON para esta página.");
     }
