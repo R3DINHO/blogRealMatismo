@@ -36,12 +36,4 @@ pra pagina inicial -> desenvolvedores do site -> andres, riscael, peppers
     novidadesImg.style.filter = "invert(1)";
     divPatrociniosImg.style.filter = "none";
 
-<<<<<<< HEAD
 dadada 383838
-
-
-!!!pagina p/ blog -> historia: como foi criado!!!
-!!! pagina dos desenvolvedores !!!
-=======
-dadada 383838
->>>>>>> a7f22f78afa448357d8303b947dd7be1d79dabee

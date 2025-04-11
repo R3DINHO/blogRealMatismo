@@ -30,13 +30,6 @@ fetch('/novidades.json')
       if(dataEl) {
         dataEl.textContent = `${noticia.data}`
       }
-
-
-      const captionEL = document.querySelector(".mainCaption")
-      if(captionEL){
-        captionEL.textContent = `${noticia.caption}`
-      }
-
     } else {
       console.warn("Notícia não encontrada no JSON para esta página.");
     }
