@@ -37,3 +37,7 @@ pra pagina inicial -> desenvolvedores do site -> andres, riscael, peppers
     divPatrociniosImg.style.filter = "none";
 
 dadada 383838
+
+
+!!!pagina p/ blog -> historia: como foi criado!!!
+!!! pagina dos desenvolvedores !!!
