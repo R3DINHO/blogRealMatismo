@@ -68,6 +68,8 @@ fetch('/novidades.json')
         <img src="../${novidade.imagem}" alt="${novidade.alt}">
         <h3 class="titulo-noticia">${novidade.titulo}</h3>
         <p class="desc-noticia">${novidade.descricao}</p>
+        <br>
+        <p class="dataHoraP">${novidade.data}</p>
       `;
 
       linkElement.appendChild(novidadeElement);

@@ -212,23 +212,37 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #dfdfdf;
+    background-color: #dfdfdf6e;
     padding: 10px;
+    transition:  0.3s ease;
+}
+
+.instaReal:hover{
+    background-color: #000;
+    color: #fff;
+    .instaNomeImg img{
+        filter: invert(1);
+    }
 }
 
 .instaReal h3{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .instaNomeImg{
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 3px;
     font-weight: bolder;
 }
 
 .instaNomeImg img{
-    width: 35px;
+    width: 30px;
+    transition: 0.3s ease;
+}
+
+.instaNomeImg p{
+    font-size: 14px;
 }
 
 
@@ -291,6 +305,10 @@ hr{
     color: #272727;
     text-align: left;
     font-size: 14px;
+}
+
+.dataHoraP{
+    font-size: 12px;
 }
 
 /* patrocínios */
