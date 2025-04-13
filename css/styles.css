@@ -1,0 +1,376 @@
+/* Reset da página */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'gotham';
+}
+
+
+body{
+    filter: invert(1);
+    background-color: #000;
+}
+
+a {
+    all: unset; /* Remove todos os estilos herdados e padrão do navegador */
+}
+
+.aHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* navbar */
+
+.navbar-container{
+    user-select: none;
+}
+
+/* navbar do topo */
+.navbar-topo{
+    background-color: #202020;
+    height: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+
+}
+.resenhudo-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #202020;
+    
+}
+
+.resenhudo-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-resenha 15s linear infinite;
+}
+
+.resenhudo-track span {
+    display: inline-block;
+    padding: 0 30px; /* espaçamento entre as frases */
+    font-size: 17px;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+
+
+
+.navbar-topo ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 23px;
+}
+
+.navbar-topo ul li{
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+/* navbar de baixo */
+
+.navbar-baixo{
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoReal{
+    display: flex;
+    gap: 15px;
+    position: relative;
+    
+    
+
+}
+
+.infoReal img{
+    width: 90px;
+    height: 90px;
+    box-shadow: 
+    0 0 7px #ffffff;
+    border-radius: 50%;
+    filter: invert(1);
+}
+
+.nomeRealMatismo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #000000; /* Cor do neon */
+    text-shadow: 
+        0 0 7px #000000;
+    }
+.nomeRealMatismo h2{ 
+    font-size: 40px;
+}
+
+.nomeRealMatismo p{
+    letter-spacing: -0.5px;
+}
+
+
+/* main */
+
+main{
+    background-color: #dfdfdf;
+    padding: 16px;
+
+}
+
+/* Artigo */
+
+.corpo-artigo{
+    background-color: #efefef;
+    padding: 25px;
+    display: flex;
+
+}
+
+.corpo-artigo img{
+    filter: invert(1);
+}
+
+article{
+    padding: 45px 40px;
+    
+}
+
+article{
+    width: 70%;
+
+}
+
+article h2{ 
+    font-size: 40px;
+}
+
+article .infoMateria{
+    color: #272727;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+article .destaque{
+    color: #fff;
+    filter: invert(1);
+}
+
+article #subTitle{
+    color: #272727;
+    font-size: 18px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+article figure{
+    margin: 40px 0 30px;
+    color: #272727;
+    font-size: 13px;
+
+}
+
+#fotoTime{
+    width: 100%;
+    height: auto;
+
+}
+
+.conteudo-corpo{
+    text-align: justify;
+    width: 100%;
+}
+
+hr{
+    border: 1px solid #00000027;
+}
+
+.instaReal{
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfdfdf;
+    padding: 10px;
+}
+
+.instaReal h3{
+    font-size: 25px;
+}
+
+.instaNomeImg{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: bolder;
+}
+
+.instaNomeImg img{
+    width: 35px;
+}
+
+
+
+/* novidades container */
+
+.aside-container{
+    width: 30%;  
+    padding: 45px 0 0 25px;  
+    position: relative;
+}
+
+.aside-container h2{
+    font-size: 32px;
+}
+
+
+
+#noticias-container{
+    position: absolute;
+    right: 5px;
+    width: 90%;
+    height: 100%;
+    max-height: 90%; 
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+#noticias-container::-webkit-scrollbar{
+    background: #00000000;
+    width: 10px;
+}
+
+#noticias-container::-webkit-scrollbar-thumb{
+    background: #808080;
+    border-radius: 10px;
+}
+
+.novidades-card{
+    width: 100%;
+    background-color: #dfdfdf;
+    padding: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.novidades-card img{
+    width: 100%;
+}
+
+.titulo-noticia{
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+    
+}
+
+.desc-noticia{
+    margin-top: 15px;
+    color: #272727;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* patrocínios */
+
+
+.divPatrocinios {
+    overflow: hidden;
+    width: 50%;
+    background: #fff;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.divPatrocinios::before,
+.divPatrocinios::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px; /* Largura do efeito */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.divPatrocinios::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.divPatrocinios::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.logos-wrapper {
+    display: flex;
+    width: max-content;
+}
+
+.logos {
+    display: flex;
+    animation: scroll 8s linear infinite;
+}
+
+.logos img {
+    object-fit: contain;
+    margin: 0 100px;
+    height: 100px;
+}
+
+.imgEqCell{
+    display: flex;
+    align-items: center;
+    font-family: "horizon";
+    text-transform: uppercase;
+    margin: 0 100px;
+    user-select: none;
+    font-size: 22px;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+footer{
+    color: #fff;
+    background-color: #202020;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    filter: invert(1);
+}

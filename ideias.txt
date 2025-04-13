@@ -1,0 +1,43 @@
+opção de modo escuro e modo claro com as cor preta e branca -> real matismo
+
+
+página inicial
+
+sobre o blog
+    h1 -> bem vindo a nação resenhuda
+    foto time
+    explicação do blog, o que é
+        o time do povo quer ligar o clube ao povo resenhudo
+
+
+
+
+
+outras paginas
+    quando rm joga
+    
+BEMVINDO NACAO RESENHUDA
+
+
+json pra novidades + scrollable
+!!!data e hora das publicações!!!
+pra pagina inicial -> desenvolvedores do site -> andres, riscael, peppers
+
+
+    let body = document.body
+    let corpoArtigoImg = document.querySelector(".corpo-artigo img")
+    let divPatrociniosImg = document.querySelector(".divPatrocinios img")
+    let novidadesImg = document.querySelector(".novidades-card img")
+
+    body.style.filter = "invert(1)";
+    body.style.backgroundColor = "#000";
+
+    corpoArtigoImg.style.filter = "invert(1)";
+    novidadesImg.style.filter = "invert(1)";
+    divPatrociniosImg.style.filter = "none";
+
+dadada 383838
+
+
+!!!pagina p/ blog -> historia: como foi criado!!!
+!!! pagina dos desenvolvedores !!!

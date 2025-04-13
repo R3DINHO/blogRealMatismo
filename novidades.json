@@ -1,0 +1,45 @@
+{
+  "novidades": [
+    {
+      "titulo": "Bem-vinda nação resenhuda!",
+      "descricao": "Conheça o blog do maior time do IF São Miguel Paulista.",
+      "imagem": "img/fotoTime.jpg",
+      "alt": "imagem do elenco do Real Matismo",
+      "data": "09/04/2025 - 11:57",
+      "link": "index.html",
+      "caption": "Imagem: Real Matismo."
+    },
+    {
+      "titulo": "Confira a camisa do mais resenhudo!",
+      "descricao": "Lançamos a nova camisa do Real Matismo! O manto tá pronto e só esperando pra ser estreado... Vem ver de perto essa obra de arte!",
+      "imagem": "img/noticiasIMG/camisasNoticias.jpg",
+      "alt": "imagem borrada camisas do real matismo",
+      "data": "09/04/2025 - 12:57",
+      "link": "lancamentoCamisas.html",
+      "caption": "Imagem criada por Real Matismo."
+
+    },
+    {
+      "titulo": "2º edição da Aurea Cup confirmada!",
+      "descricao": "O Real vai atrás do seu primeiro título! Veja as informações do maior campeonato de futsal das equipes do IF São Miguel Paulista.",
+      "imagem": "img/noticiasIMG/postAC.jpg",
+      "alt": "imagem post aurea cup",
+      "data": "09/04/2025 - 11:57",
+      "link": "aureaCupConfirmada.html",
+      "caption": "Imagem criada por Real Matismo."
+
+    },
+    {
+      "titulo": "O Mais Resenhudo buscou reforços!",
+      "descricao": "O Real vai atrás do seu primeiro título! Veja as informações do maior campeonato de futsal das equipes do IF São Miguel Paulista.",
+      "imagem": "img/noticiasIMG/thiHenrique.jpg",
+      "alt": "imagem com henrique e thiago",
+      "data": "09/04/2025 - 11:57",
+      "link": "contratacaoDeHenriqueEThiago.html",
+      "caption": "Imagem criada por Real Matismo."
+
+    }
+    
+    
+  ]
+}
