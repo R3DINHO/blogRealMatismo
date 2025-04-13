@@ -64,9 +64,11 @@ fetch('/novidades.json')
 
       const novidadeElement = modeloNovidade.cloneNode(true);
       novidadeElement.innerHTML = `
-        <img src="${novidade.imagem}" alt="${novidade.alt}">
+        <img src="../${novidade.imagem}" alt="${novidade.alt}">
         <h3 class="titulo-noticia">${novidade.titulo}</h3>
         <p class="desc-noticia">${novidade.descricao}</p>
+        <br>
+        <p class="dataHoraP">${novidade.data}</p>
       `;
 
       linkElement.appendChild(novidadeElement);
