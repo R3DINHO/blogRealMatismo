@@ -11,6 +11,9 @@ fetch('/novidades.json')
     const noticia = data.novidades.find(n => n.link.includes(nomePagina));
 
     if (noticia) {
+
+      document.title = noticia.titulo;
+
       // Preenche o título principal (h2)
       const tituloEl = document.querySelector("article header h2");
       if (tituloEl) tituloEl.textContent = noticia.titulo;
@@ -52,8 +55,21 @@ fetch('/novidades.json')
     let nomePaginaAtual = window.location.pathname.split("/").pop();
     if (nomePaginaAtual === "") nomePaginaAtual = "index.html";
 
-    data.novidades.forEach(novidade => {
-      // Pula se for a página atual OU se for a novidade de boas-vindas
+    function parseDataPersonalizada(dataStr) {
+      const [dataParte, horaParte] = dataStr.split(" - ");
+      const [dia, mes, ano] = dataParte.split("/").map(Number);
+      const [hora, minuto] = horaParte.split(":").map(Number);
+      return new Date(ano, mes - 1, dia, hora, minuto);
+    }
+
+    // Ordena as novidades do mais recente para o mais antigo
+    const novidadesOrdenadas = data.novidades.sort((a, b) => {
+      const dataA = parseDataPersonalizada(a.data);
+      const dataB = parseDataPersonalizada(b.data);
+      return dataB - dataA;
+    });
+
+    novidadesOrdenadas.forEach(novidade => {
       if (
         novidade.link.includes(nomePaginaAtual) ||
         novidade.link === "index.html"

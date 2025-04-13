@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="shortcut icon" href="../img/logoRealMatismo.png" type="image/x-icon">
-    <title>Lançamento das camisas do Real</title>
+    <title></title>
+    
 </head>
 
 <body>
@@ -15,16 +16,27 @@
         <div class="navbar-container">
             <nav>
                 <div class="navbar-topo ">
-                    <ul>
-                        <li>O mais resenhudo</li>
-                        <li>O mais resenhudo</li>
-                        <li>O mais resenhudo</li>
-                        <li>O mais resenhudo</li>
-                        <li>O mais resenhudo</li>
-                        <li>O mais resenhudo
-                        <li></li>
-                        </li>
-                    </ul>
+                    <div class="resenhudo-wrapper">
+                        <div class="resenhudo-track">
+                            
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                            <span>O mais resenhudo</span>
+                        
+                        </div>
+                    </div>
                 </div>
                 <div class="navbar-baixo">
                     <div class="infoReal">
@@ -37,8 +49,18 @@
                                 <p>Futsal e Resenha</p>
                             </div>
                         </a>
-                        
+
                     </div>
+                    <a href="https://www.instagram.com/real.matismo_futsal/#">
+                        <div class="instaReal">
+                            <h3>Siga nosso instagram</h3>
+                            <div class="instaNomeImg">
+                                <img src="https://img.icons8.com/?size=512&id=44907&format=png" alt="">
+                                <p>@real.matismo_futsal</p>
+                            </div>
+
+                        </div>
+                    </a>
 
                 </div>
             </nav>
@@ -46,10 +68,16 @@
         <main class="normal">
             <div class="corpo-artigo ">
                 <article>
-                    <h2>
-                        Titulo da matéria
-                    </h2>
-                    <img src="" id="fotoTime" alt="">
+                    <header>
+                        <h2>
+                        </h2>
+                        <h3 id="subTitle"></h3>
+                        <p class="infoMateria">Por <span class="destaque">Fabianne Jesus</span>, <span class="data"></span></p>
+                        <figure>
+                            <img src="" id="fotoTime" alt="">
+                            <figcaption class="mainCaption"></figcaption>
+                        </figure>
+                    </header>
                     <p class="conteudo-corpo">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quidem sint! Iste, animi
                         minima tempore, enim praesentium eligendi dolores commodi natus ratione ipsum cumque! Enim
@@ -73,6 +101,7 @@
                         minima tempore, enim praesentium eligendi dolores commodi natus ratione ipsum cumque! Enim
                         maxime nihil doloribus cumque eum!
                     </p>
+
                 </article>
                 <hr class="normal">
                 <aside class="aside-container">
@@ -83,7 +112,7 @@
 
                             <a class="linkNovidade" href="">
                                 <div class="novidades-card">
-                                
+
                                 </div>
                             </a>
                         </div>
@@ -113,6 +142,26 @@
                     <p class="imgEqCell">equipe cell</p>
                     <img src="../img/patrocinios/logoPs.png" alt="Logo Playstation">
                 </div>
+                <div class="logos">
+                    <img src="../img/patrocinios/logoSpavieri.png" alt="Logo Spavieri Imóveis">
+                    <p class="imgEqCell">equipe cell</p>
+                    <img src="../img/patrocinios/logoPs.png" alt="Logo Playstation">
+                </div>
+                <div class="logos">
+                    <img src="../img/patrocinios/logoSpavieri.png" alt="Logo Spavieri Imóveis">
+                    <p class="imgEqCell">equipe cell</p>
+                    <img src="../img/patrocinios/logoPs.png" alt="Logo Playstation">
+                </div>
+                <div class="logos">
+                    <img src="../img/patrocinios/logoSpavieri.png" alt="Logo Spavieri Imóveis">
+                    <p class="imgEqCell">equipe cell</p>
+                    <img src="../img/patrocinios/logoPs.png" alt="Logo Playstation">
+                </div>
+                <div class="logos">
+                    <img src="../img/patrocinios/logoSpavieri.png" alt="Logo Spavieri Imóveis">
+                    <p class="imgEqCell">equipe cell</p>
+                    <img src="../img/patrocinios/logoPs.png" alt="Logo Playstation">
+                </div>
             </div>
         </div>
         <footer class="normal">
@@ -120,9 +169,7 @@
         </footer>
     </div>
 
-    <script src="../js/modoPagina.js"></script>
     <script src="../js/noticiasMaterias.js"></script>
-
 </body>
 
 </html>
