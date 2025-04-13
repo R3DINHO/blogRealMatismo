@@ -2,7 +2,7 @@
 const nomePagina = window.location.pathname.split("/").pop();
 
 // Busca os dados do JSON
-fetch('/public/novidades.json')
+fetch('/novidades.json')
   .then(response => response.json())
   .then(data => {
 
@@ -35,6 +35,7 @@ fetch('/public/novidades.json')
       if(captionEL){
         captionEL.textContent = `${noticia.caption}`
       }
+
     } else {
       console.warn("Notícia não encontrada no JSON para esta página.");
     }
@@ -58,12 +59,12 @@ fetch('/public/novidades.json')
       ) return;
 
       const linkElement = document.createElement("a");
-      linkElement.href = `materias/${novidade.link}`;
+      linkElement.href = novidade.link;
       linkElement.classList.add("linkNovidade");
 
       const novidadeElement = modeloNovidade.cloneNode(true);
       novidadeElement.innerHTML = `
-        <img src="${novidade.imagem}" alt="${novidade.alt}">
+        <img src="../${novidade.imagem}" alt="${novidade.alt}">
         <h3 class="titulo-noticia">${novidade.titulo}</h3>
         <p class="desc-noticia">${novidade.descricao}</p>
       `;
