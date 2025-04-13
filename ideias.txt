@@ -41,3 +41,5 @@ dadada 383838
 
 !!!pagina p/ blog -> historia: como foi criado!!!
 !!! pagina dos desenvolvedores !!!
+    pq fizemos
+    sobre nos
