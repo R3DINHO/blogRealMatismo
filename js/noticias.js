@@ -48,7 +48,8 @@ fetch('/novidades.json')
     const container = document.querySelector('#noticias-container');
     const modeloNovidade = document.querySelector(".novidades-card");
 
-    const nomePaginaAtual = window.location.pathname.split("/").pop();
+    let nomePaginaAtual = window.location.pathname.split("/").pop();
+    if (nomePaginaAtual === "") nomePaginaAtual = "index.html";
 
     data.novidades.forEach(novidade => {
       // Pula se for a página atual OU se for a novidade de boas-vindas
