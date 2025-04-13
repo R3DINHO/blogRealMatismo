@@ -2,7 +2,7 @@
 const nomePagina = window.location.pathname.split("/").pop();
 
 // Busca os dados do JSON
-fetch('/novidades.json')
+fetch('../public/novidades.json')
   .then(response => response.json())
   .then(data => {
 
