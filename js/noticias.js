@@ -6,7 +6,7 @@ fetch('/novidades.json')
   .then(response => response.json())
   .then(data => {
 
-    
+
     // Encontra a notícia correspondente à página
     const noticia = data.novidades.find(n => n.link.includes(nomePagina));
 
@@ -27,12 +27,12 @@ fetch('/novidades.json')
       }
 
       const dataEl = document.querySelector(".data");
-      if(dataEl) {
+      if (dataEl) {
         dataEl.textContent = `${noticia.data}`
       }
 
       const captionEL = document.querySelector(".mainCaption")
-      if(captionEL){
+      if (captionEL) {
         captionEL.textContent = `${noticia.caption}`
       }
     } else {
@@ -42,10 +42,11 @@ fetch('/novidades.json')
   .catch(error => console.error("Erro ao carregar JSON:", error));
 
 
-  fetch('/novidades.json')
+fetch('/novidades.json')
   .then(response => response.json())
   .then(data => {
-    const container = document.querySelector('#noticias-container');
+    const container = document.querySelector('#noticias-container-desktop');
+
     const modeloNovidade = document.querySelector(".novidades-card");
 
     let nomePaginaAtual = window.location.pathname.split("/").pop();
@@ -90,5 +91,66 @@ fetch('/novidades.json')
     });
 
     modeloNovidade.parentElement.remove();
+  })
+  .catch(error => console.error('Erro ao carregar as novidades:', error));
+
+
+
+
+// mobile
+fetch('/novidades.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.querySelector('#noticias-container-mobile');
+    const modeloNovidade = document.querySelector(".modelo-card");
+
+
+
+
+    let nomePaginaAtual = window.location.pathname.split("/").pop();
+    if (nomePaginaAtual === "") nomePaginaAtual = "index.html";
+
+    // Função para converter string "dd/MM/yyyy - HH:mm" para objeto Date
+    function parseDataPersonalizada(dataStr) {
+      const [dataParte, horaParte] = dataStr.split(" - ");
+      const [dia, mes, ano] = dataParte.split("/").map(Number);
+      const [hora, minuto] = horaParte.split(":").map(Number);
+      return new Date(ano, mes - 1, dia, hora, minuto);
+    }
+
+    // Ordena as novidades do mais recente para o mais antigo
+    const novidadesOrdenadas = data.novidades.sort((a, b) => {
+      const dataA = parseDataPersonalizada(a.data);
+      const dataB = parseDataPersonalizada(b.data);
+      return dataB - dataA;
+    });
+
+    novidadesOrdenadas.forEach(novidade => {
+      if (
+        novidade.link.includes(nomePaginaAtual) ||
+        novidade.link === "index.html"
+      ) return;
+
+      const linkElement = document.createElement("a");
+      linkElement.href = `materias/${novidade.link}`;
+      linkElement.classList.add("linkNovidade");
+
+      const novidadeElement = modeloNovidade.cloneNode(true);
+      novidadeElement.innerHTML = `
+        <img src="../${novidade.imagem}" alt="${novidade.alt}">
+        <div class="textosNoticia">
+          <h3 class="titulo-noticia">${novidade.titulo}</h3>
+          <p class="desc-noticia">${novidade.descricao}</p>
+          <br>
+          <p class="dataHoraP">${novidade.data}</p>
+        </div>
+
+      `;
+
+      linkElement.appendChild(novidadeElement);
+      container.appendChild(linkElement);
+    });
+
+    modeloNovidade.remove();
   })
   .catch(error => console.error('Erro ao carregar as novidades:', error));

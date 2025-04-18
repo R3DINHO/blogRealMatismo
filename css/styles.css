@@ -1,6 +1,6 @@
 /* Reset da página */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,16 +8,17 @@
 }
 
 
-body{
+body {
     filter: invert(1);
     background-color: #000;
 }
 
 a {
-    all: unset; /* Remove todos os estilos herdados e padrão do navegador */
+    all: unset;
+    /* Remove todos os estilos herdados e padrão do navegador */
 }
 
-.aHome{
+.aHome {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,26 +27,27 @@ a {
 
 /* navbar */
 
-.navbar-container{
+.navbar-container {
     user-select: none;
 }
 
 /* navbar do topo */
-.navbar-topo{
+.navbar-topo {
     background-color: #202020;
-    height: 3rem; 
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     filter: invert(1);
 
 }
+
 .resenhudo-wrapper {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
     background-color: #202020;
-    
+
 }
 
 .resenhudo-track {
@@ -54,20 +56,25 @@ a {
     animation: scroll-resenha 15s linear infinite;
 }
 
+.resenhudoTitle{
+    display: none;
+}
+
 .resenhudo-track span {
     display: inline-block;
-    padding: 0 30px; /* espaçamento entre as frases */
+    padding: 0 30px;
+    /* espaçamento entre as frases */
     font-size: 17px;
     color: #cccccc;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
+
 }
 
 
 
 
-.navbar-topo ul{
+.navbar-topo ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -75,7 +82,7 @@ a {
     margin-left: 23px;
 }
 
-.navbar-topo ul li{
+.navbar-topo ul li {
     color: #cccccc;
     text-transform: uppercase;
     font-size: 17px;
@@ -84,7 +91,7 @@ a {
 
 /* navbar de baixo */
 
-.navbar-baixo{
+.navbar-baixo {
     background-color: #fff;
     padding: 30px;
     display: flex;
@@ -92,47 +99,50 @@ a {
     justify-content: space-between;
 }
 
-.infoReal{
+.infoReal {
     display: flex;
     gap: 15px;
     position: relative;
-    
-    
+
+
 
 }
 
-.infoReal img{
+.pintopinto{
     width: 90px;
     height: 90px;
-    box-shadow: 
-    0 0 7px #ffffff;
+    box-shadow:
+        0 0 7px #ffffff;
     border-radius: 50%;
     filter: invert(1);
 }
 
-.nomeRealMatismo{
+
+.nomeRealMatismo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    color: #000000; /* Cor do neon */
-    text-shadow: 
+    color: #000000;
+    /* Cor do neon */
+    text-shadow:
         0 0 7px #000000;
-    }
-.nomeRealMatismo h2{ 
+}
+
+.nomeRealMatismo h2 {
     font-size: 40px;
 }
 
-.nomeRealMatismo p{
+.nomeRealMatismo p {
     letter-spacing: -0.5px;
 }
 
 
 /* main */
 
-main{
+main {
     background-color: #dfdfdf;
     padding: 16px;
 
@@ -140,72 +150,72 @@ main{
 
 /* Artigo */
 
-.corpo-artigo{
+.corpo-artigo {
     background-color: #efefef;
     padding: 25px;
     display: flex;
 
 }
 
-.corpo-artigo img{
+.corpo-artigo img {
     filter: invert(1);
 }
 
-article{
+article {
     padding: 45px 40px;
-    
+
 }
 
-article{
+article {
     width: 70%;
 
 }
 
-article h2{ 
+article h2 {
     font-size: 40px;
 }
 
-article .infoMateria{
+article .infoMateria {
     color: #272727;
     margin-top: 15px;
     font-size: 14px;
 }
 
-article .destaque{
+article .destaque {
     color: #fff;
     filter: invert(1);
 }
 
-article #subTitle{
+article #subTitle {
     color: #272727;
     font-size: 18px;
     width: 90%;
     margin-top: 10px;
 }
 
-article figure{
+article figure {
     margin: 40px 0 30px;
     color: #272727;
     font-size: 13px;
 
 }
 
-#fotoTime{
+#fotoTime {
     width: 100%;
     height: auto;
 
 }
 
-.conteudo-corpo{
+.conteudo-corpo {
     text-align: justify;
     width: 100%;
 }
 
-hr{
+hr {
     border: 1px solid #00000027;
 }
 
-.instaReal{
+.instaReal {
     cursor: pointer;
     text-transform: uppercase;
     display: flex;
@@ -214,34 +224,39 @@ hr{
     justify-content: center;
     background-color: #dfdfdf6e;
     padding: 10px;
-    transition:  0.3s ease;
+    transition: 0.3s ease;
 }
 
-.instaReal:hover{
+.instaReal:hover {
     background-color: #000;
     color: #fff;
-    .instaNomeImg img{
+
+    .instaNomeImg img {
         filter: invert(1);
     }
 }
 
-.instaReal h3{
+.instaReal h3 {
     font-size: 20px;
 }
 
-.instaNomeImg{
+.mobile .instaNomeImg{
+    display: none;
+}
+
+.instaNomeImg {
     display: flex;
     align-items: center;
     gap: 3px;
     font-weight: bolder;
 }
 
-.instaNomeImg img{
+.instaNomeImg img {
     width: 30px;
     transition: 0.3s ease;
 }
 
-.instaNomeImg p{
+.instaNomeImg p {
     font-size: 14px;
 }
 
@@ -249,39 +264,44 @@ hr{
 
 /* novidades container */
 
-.aside-container{
-    width: 30%;  
-    padding: 45px 0 0 25px;  
+.aside-container {
+    width: 30%;
+    padding: 45px 0 0 25px;
     position: relative;
+    display: block;
 }
 
-.aside-container h2{
+.aside-container h2 {
     font-size: 32px;
 }
 
+.aside-container-mobile {
+    display: none;
+}
 
 
-#noticias-container{
+
+#noticias-container-desktop {
     position: absolute;
     right: 5px;
     width: 90%;
     height: 100%;
-    max-height: 90%; 
+    max-height: 90%;
     overflow-y: auto;
     padding-right: 12px;
 }
 
-#noticias-container::-webkit-scrollbar{
+#noticias-container-desktop::-webkit-scrollbar {
     background: #00000000;
     width: 10px;
 }
 
-#noticias-container::-webkit-scrollbar-thumb{
+#noticias-container-desktop::-webkit-scrollbar-thumb {
     background: #808080;
     border-radius: 10px;
 }
 
-.novidades-card{
+.novidades-card {
     width: 100%;
     background-color: #dfdfdf;
     padding: 20px;
@@ -289,25 +309,25 @@ hr{
     cursor: pointer;
 }
 
-.novidades-card img{
+.novidades-card img {
     width: 100%;
 }
 
-.titulo-noticia{
+.titulo-noticia {
     font-weight: bold;
     font-size: 22px;
     color: #000;
-    
+
 }
 
-.desc-noticia{
+.desc-noticia {
     margin-top: 15px;
     color: #272727;
     text-align: left;
     font-size: 14px;
 }
 
-.dataHoraP{
+.dataHoraP {
     font-size: 12px;
 }
 
@@ -330,7 +350,8 @@ hr{
     content: "";
     position: absolute;
     top: 0;
-    width: 50px; /* Largura do efeito */
+    width: 50px;
+    /* Largura do efeito */
     height: 100%;
     z-index: 2;
     pointer-events: none;
@@ -362,7 +383,7 @@ hr{
     height: 100px;
 }
 
-.imgEqCell{
+.imgEqCell {
     display: flex;
     align-items: center;
     font-family: "horizon";
@@ -377,6 +398,7 @@ hr{
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -384,11 +406,329 @@ hr{
 
 
 
-footer{
+footer {
     color: #fff;
     background-color: #202020;
     padding: 0.75rem;
     display: flex;
     justify-content: center;
     filter: invert(1);
+}
+
+@media screen and (max-width: 1280px) {
+    .instaReal {
+        gap: 3px;
+    }
+
+
+    .instaReal h3 {
+        font-size: 16px;
+    }
+
+    .instaNomeImg img {
+        width: 20px;
+    }
+
+    .instaNomeImg p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .resenhudo-track span {
+        font-size: 12px;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    hr.normal {
+        display: none;
+    }
+
+    .infoReal {
+        gap: 15px;
+    }
+
+    .infoReal img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .nomeRealMatismo h2 {
+        font-size: 30px;
+    }
+
+    .nomeRealMatismo p {
+        letter-spacing: -0.5px;
+        font-size: 15px;
+    }
+
+    .instaReal:hover {
+        background-color: #dfdfdf6e;
+        color: #000;
+    }
+
+    .instaReal h3 {
+        font-size: 15px;
+    }
+
+    .instaNomeImg img {
+        width: 20px;
+        transition: 0.3s ease;
+    }
+
+    .instaNomeImg p {
+        font-size: 10px;
+    }
+
+    .logos img {
+        object-fit: contain;
+        margin: 0 100px;
+        height: 85px;
+    }
+
+    .imgEqCell {
+        font-size: 20px;
+    }
+
+    .body-novidades {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .body-novidades h2{
+        font-size: 20px;
+    }
+    
+
+    .aside-container {
+        display: none;
+    }
+
+    .aside-container-mobile {
+        display: flex;
+        margin: 40px 0;
+    }
+
+    .linkNovidade {
+        min-width: 40%;
+
+    }
+
+    /* Container dos cards - será o único scrollável lateralmente */
+    #noticias-container-mobile {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        gap: 20px;
+        padding: 0;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Estilo da barra de rolagem (opcional) */
+
+
+    /* Card individual */
+    .novidades-card {
+        /* largura fixa */
+        background-color: #dfdfdf;
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 9px;
+        
+    }
+
+
+    .modelo-card{
+        margin: 10px 0;
+        display: flex;
+    }    
+
+    .titulo-noticia {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .desc-noticia {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    .dataHoraP {
+        font-size: 8px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .resenhudo-track span{
+        font-size: 8px;
+    }
+
+    .navbar-baixo{
+        justify-content: center;
+    }
+
+
+
+
+
+
+    main{
+        padding: 0;
+    }
+
+    .corpo-artigo{
+        padding: 15px;
+    }
+
+    article{
+        padding: 0;
+    }
+
+    header h2{
+        font-size: 27px;
+        text-align: left;
+    }
+
+    article #subTitle{
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    
+    article .infoMateria{
+        font-size: 10px;
+    }
+    
+    .aside-container-mobile{
+        margin: 15px 0;
+    }
+    .body-novidades h2{
+        font-size: 15px;
+    }
+
+    
+    .novidades-card{
+        padding: 7px;
+    }
+    .titulo-noticia{
+        font-size: 12px;
+    }
+
+    .desc-noticia{
+        font-size: 8px;
+        text-align: justify;
+    }
+
+    .conteudo-corpo{
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    
+    .resenhudo-track{
+        display: none;
+    }
+
+    .resenhudoTitle{
+        display: block;
+        color: #cccccc;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .navbar-baixo{
+        justify-content: center;
+    }
+
+
+    main{
+        padding: 0;
+    }
+
+    .corpo-artigo{
+        padding: 15px;
+    }
+
+    article{
+        padding: 0;
+    }
+
+    header h2{
+        font-size: 27px;
+        text-align: left;
+    }
+
+    article #subTitle{
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    
+    article .infoMateria{
+        font-size: 10px;
+    }
+    
+    .aside-container-mobile{
+        margin: 15px 0;
+    }
+    .body-novidades h2{
+        font-size: 15px;
+    }
+
+    
+    .novidades-card{
+        padding: 7px;
+    }
+    .titulo-noticia{
+        font-size: 12px;
+    }
+
+    .desc-noticia{
+        font-size: 8px;
+        text-align: justify;
+    }
+
+    .conteudo-corpo{
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nomeRealMatismo h2{
+        font-size: 20px;
+    }
+
+    .nomeRealMatismo p{
+        font-size: 12px;
+    }
+
 }

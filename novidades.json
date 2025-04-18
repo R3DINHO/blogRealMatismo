@@ -1,7 +1,7 @@
 {
   "novidades": [
     {
-      "titulo": "Bem-vinda nação resenhuda!",
+      "titulo": "Bem-vinda, nação resenhuda!",
       "descricao": "Conheça o blog do maior time do IF São Miguel Paulista.",
       "imagem": "img/fotoTime.jpg",
       "alt": "imagem do elenco do Real Matismo",
@@ -16,6 +16,26 @@
       "alt": "imagem borrada camisas do real matismo",
       "data": "09/04/2025 - 12:57",
       "link": "lancamentocamisas.html",
+      "caption": "Imagem criada por Real Matismo."
+
+    },
+    {
+      "titulo": "2º edição da Aurea Cup confirmada!",
+      "descricao": "O Real vai atrás do seu primeiro título! Veja as informações do maior campeonato de futsal das equipes do IF São Miguel Paulista.",
+      "imagem": "img/noticiasIMG/postAC.jpg",
+      "alt": "imagem post aurea cup",
+      "data": "09/04/2025 - 11:57",
+      "link": "aureacupconfirmada.html",
+      "caption": "Imagem criada por Real Matismo."
+
+    },
+    {
+      "titulo": "O Mais Resenhudo buscou reforços!",
+      "descricao": "O Real vai atrás do seu primeiro título! Veja as informações do maior campeonato de futsal das equipes do IF São Miguel Paulista.",
+      "imagem": "img/noticiasIMG/thiHenrique.jpg",
+      "alt": "imagem com henrique e thiago",
+      "data": "19/04/2025 - 11:57",
+      "link": "contratacaodehenriqueethiago.html",
       "caption": "Imagem criada por Real Matismo."
 
     },
